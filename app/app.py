@@ -11,8 +11,7 @@ app = Flask(__name__)
 # En una app real, esta credencial NUNCA debe estar en texto plano.
 # Este es un ejemplo intencional para que Gitleaks / Secret Scanning lo detecte
 # durante la demo. En la versión "corregida" se reemplaza por Vault (ver vault_client.py)
-DB_PASSWORD_INSEGURO = "AKIAIOSFODNN7EXAMPLE_SECRET_KEY_12345"  # <-- esto debe ser detectado y bloqueado
-
+DB_PASSWORD_INSEGURO = "Sc_AgroDB_2026_Pr0dSecret!x9Qz"  # <-- esto debe ser detectado y bloqueado
 
 @app.route("/")
 def home():
