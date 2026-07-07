@@ -1,0 +1,11 @@
+# Configuración de pre-commit hooks para SoftCorp
+# Esto corre EN TU PC, antes de que el commit siquiera se cree.
+# Evita que un secreto salga del entorno local del desarrollador
+# (cumple el requerimiento técnico #4 del caso).
+
+repos:
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.18.4
+    hooks:
+      - id: gitleaks
+        name: "Gitleaks - bloqueo local de secretos antes del commit"
